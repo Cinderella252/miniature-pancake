@@ -1,0 +1,63 @@
+---
+fr:
+  account:
+    connected_apps:
+      associated: Associé %{timestamp}
+    index:
+      address: Adresse actuelle
+      auth_app_disabled: non activée
+      auth_app_enabled: activée
+      authentication_app: Application d'authentification
+      backup_code_confirm_regenerate: Oui, régénérer les codes
+      backup_codes_exist: généré
+      backup_codes_no_exist: non généré
+      default: défaut
+      device: "%{browser} sur %{os}"
+      dob: Date de naissance
+      email: Adresse courriel
+      email_add: "+ Ajouter un email"
+      email_addresses: Adresses courriel
+      full_name: Nom complet
+      login: Information de connexion
+      password: Mot de passe
+      phone: Numéro de téléphone
+      phone_add: "+ Ajouter un téléphone"
+      piv_cac_card: Carte PIV/CAC
+      piv_cac_disabled: désactivée
+      piv_cac_enabled: activée
+      reactivation:
+        instructions: Votre profil a été récemment désactivé en raison d'une réinitialisation
+          de mot passe. Vous pouvez utiliser votre clé personnelle pour réactiver
+          votre profil.
+        link: Réactivez votre profil maintenant.
+      sign_in_location_and_ip: "%{ip} (adresse IP probablement située dans %{location})"
+      ssn: Numéro d'assurance sociale
+      unknown_location: lieu inconnu
+      verification:
+        bounced: Le service postal n'a pas pu envoyer la lettre à votre adresse.
+        instructions: Votre compte nécessite un code de confirmation pour être vérifié.
+        reactivate_button: Entrez le code que vous avez reçu par la poste
+        success: Votre compte a été vérifié.
+        update_address: Please update your address to be verified.
+      webauthn: Clé de sécurité
+      webauthn_add: "+ Ajouter une clé de sécurité"
+      webauthn_confirm_delete: Oui, supprimer la clé
+      webauthn_delete: Supprimer la clé
+    items:
+      delete_your_account: Supprimer votre compte
+      personal_key: Clé personnelle
+    links:
+      delete_account: Effacer
+      regenerate_personal_key: Obtenez une nouvelle clé
+    login:
+      piv_cac: Connectez-vous avec votre ID d'employé du gouvernement
+      piv_cac_info:
+        ial1: Si vous avez ajouté votre carte PIV / CAC à votre compte, vous pouvez
+          l’utiliser à la place de votre adresse courriel et de votre mot de passe.
+        ial2: Si vous avez ajouté votre carte PIV / CAC à votre compte, vous pouvez
+          l’utiliser à la place de votre adresse courriel. Vous devrez fournir votre
+          mot de passe pour déverrouiller votre profil.
+    security:
+      link: En apprendre davantage dans le Centre d'aide
+      text: L'information de votre profil est verrouillée pour votre sécurité.
+    welcome: Bienvenue

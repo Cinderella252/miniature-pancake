@@ -1,0 +1,8 @@
+<%= link_to backup_code_setup_path do %>
+  <span class='hide'>
+    <%= t('forms.backup_code.title') %>
+  </span>
+  <%= form_tag(backup_code_setup_path, method: :patch, role: 'form') do %>
+    <%= button_tag t('forms.backup_code.generate'), type: 'submit', class: 'btn btn-link' %>
+  <% end %>
+<% end %>

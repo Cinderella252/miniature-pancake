@@ -1,0 +1,57 @@
+---
+en:
+  titles:
+    account: Account
+    account_locked: Account temporarily locked
+    add_info:
+      phone: Add a phone number
+    confirmations:
+      delete: Please confirm
+      new: Resend confirmation instructions for your account
+      show: Choose a password
+    edit_info:
+      password: Edit your password
+      phone: Edit your phone number
+    enter_2fa_code: Enter the secure one-time security code
+    passwords:
+      change: Change the password for your account
+      confirm: Confirm the password for your account
+      forgot: Reset the password for your account
+    personal_key: Just in case
+    phone_setup: Send your security code via text message (SMS) or phone call
+    piv_cac_login:
+      new: Use your PIV/CAC to sign in to your account
+    piv_cac_setup:
+      certificate:
+        bad: PIV/CAC certificate error
+        expired: PIV/CAC certificate error
+        invalid: PIV/CAC certificate error
+        none: PIV/CAC certificate error
+        revoked: PIV/CAC certificate error
+        unverified: PIV/CAC certificate error
+      new: Use your PIV/CAC card to secure your account
+      piv_cac:
+        already_associated: PIV/CAC in use by another account
+      token:
+        bad: Internal error
+        invalid: PIV/CAC certificate error
+        missing: Internal error
+    present_piv_cac: Present your PIV/CAC
+    present_webauthn: Present your hardware security key
+    reactivate_account: Reactivate your account
+    registrations:
+      new: Sign up for a account
+    sign_up:
+      completion_html: You have %{accent} with %{app}
+      loa1: created your account
+      new_sp: You are now logging in for the first time
+      verified: You have verified your identity with %{app}
+    totp_setup:
+      new: Set up two-factor authentication
+    two_factor_recovery_setup: Add a backup authentication method
+    two_factor_setup: Two-factor authentication setup
+    two_factor_setup_success: Successfully set up first authentication method
+    verify_email: Check your email
+    verify_profile: Activate your account
+    visitors:
+      index: Welcome

@@ -1,0 +1,171 @@
+---
+es:
+  two_factor_authentication:
+    account_reset:
+      cancel_link: Cancelar su solicitud
+      link: eliminando su cuenta
+      pending_html: Actualmente tiene una solicitud pendiente para eliminar su cuenta.
+        Se necesitan 24 horas desde el momento en que realizó la solicitud para completar
+        el proceso.  Por favor, vuelva más tarde. %{cancel_link}
+      recover_html: Si no puede usar ninguna de las opciones de seguridad anteriores,
+        puede %{link}.
+      recover_link: restablecer su cuenta
+      successful_cancel: Gracias. Su solicitud para eliminar su cuenta de login.gov
+        ha sido cancelada.
+      text_html: Si no puede usar ninguna de estas opciones de seguridad anteriores,
+        puede restablecer tus preferencias por %{link}.
+    backup_code_fallback:
+      question: Don't have your backup codes available?
+    backup_code_header_text: Enter your backup security code
+    backup_code_prompt: You can use this security code once. After you enter it, you'll
+      need to use a new key.
+    choose_another_option: "‹ Elige otra opción"
+    devices:
+      auth_app: Aplicación de autenticación
+      backup_code: Códigos de seguridad personal
+      phone: Teléfono
+      piv_cac: PIV/CAC
+      webauthn: Clave de seguridad
+    first_factor_enabled: "%{device} se configuró correctamente como un método de
+      autenticación."
+    header_text: Ingrese su código de seguridad
+    invalid_backup_code: Esa código de respaldo no es válida.
+    invalid_otp: Ese código de seguridad no es válido. Puede intentar ingresarlo de
+      nuevo o solicitar un nuevo código de seguridad de sólo un uso.
+    invalid_personal_key: Esa clave personal no es válida.
+    invalid_piv_cac: Esa PIV/CAC no es correcta.
+    login_intro: Usted configuró esto cuando creó su cuenta
+    login_options:
+      auth_app: Aplicación de autenticación
+      auth_app_info_html: Use su aplicación de autenticación para obtener el código
+        de seguridad.
+      backup_code: Códigos de respaldo
+      backup_code_info_html: Use un código de respaldo de su lista de códigos de respaldo
+        para iniciar sesión.
+      backup_code_only: Códigos de respaldo
+      backup_code_only_info_html: Use un código de respaldo de su lista de códigos
+        de respaldo para iniciar sesión.
+      personal_key: Clave personal
+      personal_key_info_html: Use la clave personal de 16 caracteres que usó en la
+        creación de la cuenta.
+      phone_info_html: Obtenga su código de seguridad a través de mensajes de texto
+        / SMS o de una llamada telefónica a <strong>%{phone}</strong>.
+      piv_cac: Empleados del Gobierno
+      piv_cac_info_html: Use su tarjeta PIV / CAC para asegurar su cuenta.
+      sms: Mensaje de texto / SMS
+      sms_info_html: Obtenga su código de seguridad a través de mensajes de texto
+        / SMS a <strong>%{phone}</strong>.
+      sms_setup_info_html: Obtenga su código de seguridad a través de mensajes de
+        texto / SMS.
+      voice: Llamada telefónica automatizada
+      voice_info_html: Obtenga su código de seguridad a través de una llamada telefónica
+        a <strong>%{phone}</strong>. (Solo números de teléfono de América del Norte).
+      voice_setup_info_html: Obtenga su código de seguridad a través de una llamada
+        telefónica. (Solo números de teléfono de América del Norte).
+      webauthn: Clave de seguridad
+      webauthn_info_html: Use su clave de seguridad para acceder a su cuenta.
+    login_options_link_text: Elige otra opción de seguridad
+    login_options_title: Seleccione su opción de seguridad
+    max_backup_code_login_attempts_reached: Para su seguridad, su cuenta está bloqueada
+      temporalmente porque ha ingresado el código de respaldo incorrectamente muchas
+      veces.
+    max_generic_login_attempts_reached: Para su seguridad, su cuenta está bloqueada
+      temporalmente.
+    max_otp_login_attempts_reached: Para su seguridad, su cuenta ha sido bloqueada
+      temporalmente porque ha ingresado incorrectamente el código de seguridad de
+      sólo un uso demasiadas veces.
+    max_otp_requests_reached: Para su seguridad, su cuenta ha sido bloqueada temporalmente
+      porque ha solicitado un código de seguridad demasiadas veces más de lo permitido.
+    max_personal_key_login_attempts_reached: Para su seguridad, su cuenta ha sido
+      bloqueada temporalmente porque ha ingresado incorrectamente la clave personal
+      demasiadas veces.
+    max_piv_cac_login_attempts_reached: Por tu seguridad, tu cuenta está bloqueada
+      temporalmente dado que has presentado las credenciales de tu piv/cac de forma
+      incorrecta demasiadas veces.
+    otp_delivery_preference:
+      instruction: Puede cambiar esta selección la próxima vez que inicie sesión.
+      phone_unsupported: En este momento no podemos realizar llamadas a personas en
+        %{location}.
+      sms: Mensaje de texto (SMS, sigla en inglés)
+      title: "¿Cómo deberíamos enviarle un código?"
+      voice: Llamada telefónica
+    otp_make_default_number:
+      instruction: Marque la casilla a continuación si desea que este sea el teléfono
+        predeterminado número que recibe mensajes de texto o llamadas telefónicas.
+      label: Número de teléfono predeterminado
+      title: "¿Es este tu número de teléfono predeterminado?"
+    personal_key_fallback:
+      question: "¿No tiene su clave personal?"
+    personal_key_header_text: Ingrese su clave personal
+    personal_key_prompt: Puede usar esta clave personal una vez. Después de ingresarlo,
+      se le dará una nueva clave.
+    phone:
+      delete:
+        failure: No se puede eliminar el teléfono.
+        success: Su teléfono ha sido eliminado.
+    phone_fallback:
+      question: "¿No tiene acceso a su teléfono ahora mismo?"
+    phone_fee_disclosure: Se pueden aplicar tarifas por mensajes y datos.
+    phone_info_html: Le enviaremos o llamaremos con un código de seguridad <strong>cada
+      vez que inicie sesión</strong>.
+    phone_label: Número de teléfono
+    phone_sms_info_html: Le enviaremos un mensaje de texto con un código de seguridad
+      <strong>cada vez que inicie sesión</strong>.
+    phone_sms_label: Número de teléfono móvil
+    phone_voice_info_html: Te llamaremos con un código de seguridad <strong>cada vez
+      que inicies sesión</strong>.
+    phone_voice_label: Número de teléfono
+    piv_cac_fallback:
+      question: "¿No tiene su tarjeta PIV/CAC disponible?"
+    piv_cac_header_text: Presenta tu PIV/CAC
+    please_try_again_html: Inténtelo de nuevo en <strong id=%{id}>%{time_remaining}</strong>.
+    read_about_two_factor_authentication:
+      link: leer acerca de la autenticación de dos factores
+      text_html: Puede %{link} y por qué la utilizamos en nuestra página de Ayuda.
+    totp_fallback:
+      question: "¿No tiene su aplicación de autenticación?"
+    totp_header_text: Ingrese su código de la app de autenticación
+    two_factor_choice: Configuración del primer método de autenticación (1 de 2)
+    two_factor_choice_intro_paragraphs:
+    - Agregue una segunda capa de seguridad para que solo usted pueda iniciar sesión
+      en su cuenta.
+    - Solo usarás un método de autenticación para iniciar sesión, pero te pedimos
+      que configures dos. Esto asegura que aún puede iniciar sesión si pierde el acceso
+      a uno.
+    two_factor_choice_options:
+      auth_app: Aplicación de autenticación
+      auth_app_info_html: Configure una aplicación de autenticación para obtener su
+        código de seguridad sin proporcionar un número de teléfono
+      backup_code: No tengo ninguno de los anteriores
+      backup_code_info_html: Puede utilizar códigos de copia de seguridad. Le daremos
+        10 códigos que deberá guardar en un lugar seguro.
+      backup_code_only: No tengo ninguno de los anteriores
+      backup_code_only_info_html: Puede usar códigos de respaldo como su único método
+        de autenticación. Le daremos 10 códigos que deberá guardar en un lugar seguro.
+      phone: Teléfono
+      phone_info_html: Obtenga su código de seguridad a través de mensajes de texto
+        / SMS o de una llamada telefónica
+      piv_cac: Empleados del Gobierno
+      piv_cac_info_html: Use su tarjeta PIV / CAC para asegurar su cuenta
+      second_phone: Segundo telefono
+      second_phone_info_html: Obtenga un código de seguridad por mensaje de texto
+        (SMS) o por llamada a un número de teléfono secundario (uno que no es %{phone})
+      sms: Mensaje de texto / SMS
+      sms_info_html: Obtenga su código de seguridad a través de mensajes de texto
+        / SMS
+      voice: Llamada telefónica
+      voice_info_html: Obtenga su código de seguridad a través de una llamada telefónica
+      webauthn: Clave de seguridad
+      webauthn_info_html: Use una clave de seguridad para proteger su cuenta
+    two_factor_recovery_choice: Configuración del segundo método de autenticación
+      (2 de 2)
+    two_factor_recovery_choice_intro_paragraphs:
+    - L’ajout d’une deuxième méthode d’authentification vous permet de vous connecter
+      à votre compte même si vous perdez ou n’avez pas l’autre.
+    webauthn_fallback:
+      question: "¿No tienes tu clave de seguridad disponible?"
+    webauthn_header_text: Presenta tu clave de seguridad
+    webauthn_verified:
+      header: Clave de seguridad verificada
+      info: Hemos verificado su clave de seguridad. Haga clic en continuar para iniciar
+        sesión.

@@ -1,0 +1,113 @@
+# Ruby CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-ruby/ for more details
+#
+version: 2
+jobs:
+  build:
+    parallelism: 4
+    docker:
+      # Specify the Ruby version you desire here
+      - image: circleci/ruby:2.5.3-node-browsers
+        environment:
+          RAILS_ENV: test
+          CC_TEST_REPORTER_ID: faecd27e9aed532634b3f4d3e251542d7de9457cfca96a94208a63270ef9b42e
+          COVERAGE: true
+
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      - image: circleci/postgres:9.5-alpine
+        environment:
+          POSTGRES_USER: circleci
+
+      - image: redis:4.0.1
+
+    working_directory: ~/identity-idp
+
+    steps:
+      - checkout
+
+      - restore-cache:
+          keys:
+            - v2-identity-idp-bundle-{{ checksum "Gemfile.lock" }}
+      - run:
+          name: Install dependencies
+          command: |
+            bundle check || bundle install --deployment --jobs=4 --retry=3 --without deploy development doc production --path vendor/bundle
+      - save-cache:
+          key: v2-identity-idp-bundle-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+
+      - restore-cache:
+          keys:
+            - v1-identity-idp-yarn-{{ checksum "yarn.lock" }}
+            - v1-identity-idp-yarn-
+      - run:
+          name: Install Yarn
+          command: yarn install --ignore-engines --cache-folder ~/.cache/yarn
+      - save-cache:
+          key: v1-identity-idp-yarn-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+      - run:
+          name: Install AWS CLI
+          command: |
+            sudo apt-get update
+            sudo apt-get install python-pip python-dev jq
+            sudo pip install awscli
+
+      - run:
+          name: Install Code Climate Test Reporter
+          command: |
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
+            aws s3 --region us-west-2 rm s3://login-gov-test-coverage/coverage/$CIRCLE_PREVIOUS_BUILD_NUM --recursive
+
+      - run:
+          name: Wait for DB
+          command: dockerize -wait tcp://localhost:5432 -timeout 1m
+
+      - run:
+          name: Test Setup
+          command: |
+            cp config/application.yml.default config/application.yml
+            cp keys/oidc.key.example keys/oidc.key
+            cp keys/oidc.pub.example keys/oidc.pub
+            cp certs/saml2018.crt.example certs/saml2018.crt
+            cp certs/saml2019.crt.example certs/saml2019.crt
+            cp certs/samlcloudhsm.crt.example certs/samlcloudhsm.crt
+            cp keys/saml2018.key.enc.example keys/saml2018.key.enc
+            cp keys/saml2019.key.enc.example keys/saml2019.key.enc
+            cp pwned_passwords/pwned_passwords.txt.sample pwned_passwords/pwned_passwords.txt
+            bundle exec rake db:setup --trace
+            bundle exec rake assets:precompile
+
+      - run:
+          name: Run Tests
+          command: |
+            mkdir /tmp/test-results
+            ./cc-test-reporter before-build
+
+            bundle exec rake knapsack:rspec
+            yarn test
+            bundle exec slim-lint app/views
+
+      - run:
+          name: Code Climate Test Coverage
+          command: |
+            ./cc-test-reporter format-coverage -t simplecov -o "coverage/codeclimate.$CIRCLE_NODE_INDEX.json"
+            aws s3 sync coverage/ "s3://login-gov-test-coverage/coverage/$CIRCLE_BUILD_NUM"
+
+      # collect reports
+      - store_test_results:
+          path: /tmp/test-results
+      - store_artifacts:
+          path: /tmp/test-results
+          destination: test-results
+
+      - deploy:
+          command: |
+            aws s3 sync "s3://login-gov-test-coverage/coverage/$CIRCLE_BUILD_NUM" coverage/
+            ./cc-test-reporter sum-coverage --output - --parts $CIRCLE_NODE_TOTAL coverage/codeclimate.*.json | ./cc-test-reporter upload-coverage --input -

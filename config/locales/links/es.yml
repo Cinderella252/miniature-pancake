@@ -1,0 +1,30 @@
+---
+es:
+  links:
+    access_help: Cómo login.gov protege sus datos.
+    account:
+      reactivate:
+        with_key: Tengo mi clave
+        without_key: No tengo mi clave
+    back_to_account: Volver a Login.gov
+    back_to_sp: Volver a %{sp}
+    cancel: Cancelar
+    cancel_account_creation: "‹ Cancelar la creación de cuenta"
+    contact: Contactar
+    copy: Copiar
+    create_account: Crear cuenta
+    create_helper: No tienes una cuenta?
+    go_back: Regresa
+    help: Ayuda
+    my_account: mi cuenta
+    next: Siguiente
+    passwords:
+      forgot: "¿Olvidó su contraseña?"
+    privacy_policy: Privacidad y seguridad
+    resend: Reenviar
+    reverify: Verifique su identidad nuevamente.
+    sign_out: Cerrar sesión
+    two_factor_authentication:
+      get_another_code: Obtener otro código
+    what_is_totp: "¿Qué es una app de autenticación?"
+    what_is_webauthn: "¿Qué es una clave de seguridad de hardware?"

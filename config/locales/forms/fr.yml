@@ -1,0 +1,157 @@
+---
+fr:
+  forms:
+    backup_code:
+      are_you_sure_continue: continuez avec les codes de sauvegarde
+      are_you_sure_continue_prologue: Si vous n'avez accès à aucune autre méthode
+        d'authentification,
+      are_you_sure_desc: "<br><b>Les codes de sauvegarde ne sont pas très sûrs</b>
+        car ils peuvent facilement être perdus ou volés. <b> Si vous le pouvez, choisissez
+        une autre option</b> (utiliser un téléphone, télécharger une application d'authentification
+        ou utiliser une clé de sécurité). <br><br><b>Si vous continuez à utiliser
+        des codes de sauvegarde, protégez-les </b>. Nous vous donnerons 10 codes que
+        vous pourrez télécharger, imprimer, copier ou écrire. Plus tard, vous devrez
+        en entrer un à chaque fois que vous vous connectez."
+      are_you_sure_other_option: Choisissez une autre méthode
+      are_you_sure_title: Êtes-vous sûr? Nous vous donnerons des codes de sauvegarde
+        à sauvegarder et à utiliser.
+      depleted_desc: Vous avez utilisé tous vos codes de sauvegarde. Nous allons générer
+        de nouveaux codes de sauvegarde après avoir cliqué sur Continuer. Rangez-les
+        dans un endroit sûr pour pouvoir vous connecter à nouveau ultérieurement.
+      depleted_title: Créer de nouveaux codes de sauvegarde
+      download: Télécharger
+      generate: Générer
+      print: Impression
+      regenerate: Régénérer
+      subinfo: "<b>Ne pas perdre ces codes</b>. Téléchargez, imprimez ou copiez-les.
+        Chaque code ne peut être utilisé qu'une seule fois. Une fois que vous avez
+        utilisé les 10 codes, nous vous en donnons 10 nouveaux. Gardez vos codes aussi
+        sûr qu'un mot de passe."
+      subtitle: Vos codes de sauvegarde
+      title: Codes de sauvegarde
+    backup_code_regenerate:
+      caution: Si vous régénérez vos codes de sauvegarde, vous recevrez un nouvel
+        ensemble de codes de sauvegarde. Vos codes de sauvegarde d'origine ne seront
+        plus valides.
+      confirm: Êtes-vous sûr de vouloir régénérer vos codes de sauvegarde?
+    buttons:
+      back: Retour
+      cac: Present CAC card
+      cancel: Oui, annuler
+      continue: Continuer
+      delete: Effacer
+      disable: Désactiver
+      edit: Modifier
+      enable: Activer
+      manage: Administrer
+      resend_confirmation: Envoyer les instructions de confirmation de nouveau
+      send_security_code: Envoyer le code
+      submit:
+        confirm_change: Confirmer le changement
+        default: Soumettre
+        update: Mettre à jour
+    confirmation:
+      show_hdr: Créez un mot de passe fort
+    email:
+      buttons:
+        delete: Supprimer l'email
+    example: 'exemple:'
+    messages:
+      remember_device: Enregistrer ce navigateur
+    passwords:
+      edit:
+        buttons:
+          submit: Changer le mot de passe
+        labels:
+          password: Nouveau mot de passe
+      show: Afficher le mot de passe
+    personal_key:
+      alternative: Vous n'avez pas votre clé personnelle?
+      confirmation_label: Clé personnelle
+      instructions: Veuillez confirmer que vous avez une copie de votre clé personnelle
+        en l'entrant ci-dessous.
+      title: Entrez votre clé personnelle
+    phone:
+      buttons:
+        delete: Supprimer le numéro de teléfono
+    piv_cac_login:
+      submit: Veuillez présenter une carte PIV/CAC
+    piv_cac_mfa:
+      submit: Veuillez présenter une carte PIV/CAC
+    piv_cac_setup:
+      certificate:
+        bad_html: Veuillez choisir un certificat différent de votre PIV/CAC ou contactez
+          votre administrateur pour vous assurer que votre certificat est à jour.
+        expired_html: Veuillez choisir un certificat différent de votre PIV/CAC ou
+          contactez votre administrateur pour vous assurer que votre certificat est
+          à jour.
+        invalid_html: Veuillez choisir un certificat différent de votre PIV/CAC ou
+          contactez votre administrateur pour vous assurer que votre certificat est
+          à jour.
+        none_html: Veuillez contacter votre administrateur pour vous assurer que votre
+          certificat est à jour.
+        revoked_html: Veuillez choisir un certificat différent de votre PIV/CAC ou
+          contactez votre administrateur pour vous assurer que votre certificat est
+          à jour.
+        unverified_html: Veuillez choisir un certificat différent de votre PIV/CAC
+          ou contactez votre administrateur pour vous assurer que votre certificat
+          est à jour.
+      choose_different_certificate: Choisissez un certificat différent
+      piv_cac:
+        already_associated_html: Veuillez choisir un certificat associé à une autre
+          carte PIV/CAC ou contactez votre administrateur afin de vérifier que votre
+          carte PIV/CAC est bien à jour.
+      piv_cac_intro_html: Nous vous demanderons de présenter votre carte PIV/CAC chaque
+        <strong>fois que vous vous connecterez</strong> dans le cadre de l'authentification
+        à deux facteurs.<br><br>Après avoir cliqué sur "Ajouter PIV/CAC", votre navigateur
+        vous demandera votre code PIN PIV/CAC et vous choisirez un certificat.
+      submit: Ajouter une carte PIV/CAC
+      token:
+        bad_html: Veuillez sélectionner un autre certificat associé à votre carte
+          PIV/CAC.
+        invalid_html: Veuillez choisir un autre certificat associé à votre carte PIV/CAC.
+        missing_html: Veuillez choisir une autre méthode pour votre second facteur
+          d'authentification.
+    registration:
+      labels:
+        email: Adresse courriel
+    select: "- Sélectionner -"
+    totp_setup:
+      totp_intro_html: Lorsque vous vous connectez, vous pouvez obtenir votre code
+        de sécurité d'une application d'authentification. %{link}
+      totp_step_1: Démarrez votre application d'authentification
+      totp_step_2: Entrez cette clé dans l'application
+      totp_step_3: Entrez le code à partir de l'application
+    two_factor:
+      backup_code: Code de sécurité
+      code: Code de sécurité
+      personal_key: Clé personnelle
+      success: Ensuite, vous allez configurer une autre méthode.
+      try_again: Utilisez un autre numéro de téléphone
+    two_factor_choice:
+      legend: Sélectionnez une option pour sécuriser votre compte
+    two_factor_recovery_choice:
+      legend: Sélectionnez une méthode supplémentaire pour sécuriser votre compte
+    verify_profile:
+      instructions: Entrez le code à dix caractères qui se trouve dans la lettre que
+        nous vous avons envoyée.
+      name: Code de confirmation
+      submit: Confirmer le compte
+      title: Confirmez votre compte
+    webauthn_delete:
+      caution: Si vous supprimez votre clé de sécurité, vous ne pourrez plus l'utiliser
+        pour accéder à votre compte login.gov.
+      confirm: Êtes-vous sûr de vouloir supprimer votre clé de sécurité?
+    webauthn_setup:
+      continue: Continuer
+      instructions_text: Appuyez sur le bouton de votre clé de sécurité pour l’enregistrer
+        avec login.gov
+      instructions_title: Connectez votre clé de sécurité
+      intro_html: Ajoutez une clé de sécurité en tant que méthode d'authentification
+        à votre compte. Votre clé de sécurité doit prendre en charge le standard FIDO.
+        Vous pouvez ajouter autant de clés de sécurité que vous le souhaitez et nous
+        en recommandons au moins deux pour faciliter la récupération du compte.
+      login_text: Appuyez sur le bouton de votre clé de sécurité pour vous connecter
+        avec login.gov
+      nickname: Pseudo clé de sécurité
+      success_title: Vous avez ajouté une clé de sécurité comme méthode d'authentification.

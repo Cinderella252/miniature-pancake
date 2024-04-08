@@ -1,0 +1,143 @@
+---
+en:
+  forms:
+    backup_code:
+      are_you_sure_continue: Continue
+      are_you_sure_continue_prologue: If you don’t have access to any other authentication
+        method,
+      are_you_sure_desc: "<br><b>Backup codes are not very safe</b> because they can
+        easily be lost or stolen. <b>If you can, choose a different method</b> (use
+        a phone, download an authentication application, or use a security key). <br><br><b>If
+        you continue with backup codes, keep them safe</b>.  We'll give you 10 codes
+        that you can download, print, copy or write down.  Later, you'll have to enter
+        one every time you sign in."
+      are_you_sure_other_option: Choose a different method
+      are_you_sure_title: Are you sure?  We'll give you backup codes to save and use.
+      depleted_desc: You used all of your backup codes. We will generate new backup
+        codes after you click continue. Save them in a safe place to make sure you
+        can sign in again in the future.
+      depleted_title: Create new backup codes
+      download: Download
+      generate: Generate
+      print: Print
+      regenerate: Regenerate
+      subinfo: "<b>Don't lose these codes</b>. Download, print, or copy them. Each
+        code can only be used once. After you’ve used all 10 codes, we’ll give you
+        10 new codes.  Keep your codes as safe as your password."
+      subtitle: Your backup codes
+      title: Backup Codes
+    backup_code_regenerate:
+      caution: If you regenerate your backup codes you will receive a new set of backup
+        codes. Your original backup codes will no longer be valid.
+      confirm: Are you sure you want to regenerate your backup codes?
+    buttons:
+      back: Back
+      cac: Present CAC card
+      cancel: Yes, cancel
+      continue: Continue
+      delete: Delete
+      disable: Disable
+      edit: Edit
+      enable: Enable
+      manage: Manage
+      resend_confirmation: Resend confirmation instructions
+      send_security_code: Send code
+      submit:
+        confirm_change: Confirm change
+        default: Submit
+        update: Update
+    confirmation:
+      show_hdr: Create a strong password
+    email:
+      buttons:
+        delete: Delete email address
+    example: 'example:'
+    messages:
+      remember_device: Remember this browser
+    passwords:
+      edit:
+        buttons:
+          submit: Change password
+        labels:
+          password: New password
+      show: Show password
+    personal_key:
+      alternative: Don't have your personal key?
+      confirmation_label: Personal key
+      instructions: Please confirm you have a copy of your personal key by entering
+        it below.
+      title: Enter your personal key
+    phone:
+      buttons:
+        delete: Remove Phone
+    piv_cac_login:
+      submit: Present PIV/CAC card
+    piv_cac_mfa:
+      submit: Present PIV/CAC card
+    piv_cac_setup:
+      certificate:
+        bad_html: Please choose a different certificate from your PIV/CAC or contact
+          your administrator to ensure your certificate is up to date.
+        expired_html: Please choose a different certificate from your PIV/CAC or contact
+          your administrator to ensure your certificate is up to date.
+        invalid_html: Please choose a different certificate from your PIV/CAC or contact
+          your administrator to ensure your certificate is up to date.
+        none_html: Please contact your administrator to ensure your certificate is
+          up to date.
+        revoked_html: Please choose a different certificate from your PIV/CAC or contact
+          your administrator to ensure your certificate is up to date.
+        unverified_html: Please choose a different certificate from your PIV/CAC or
+          contact your administrator to ensure your certificate is up to date.
+      choose_different_certificate: Choose a different certificate
+      piv_cac:
+        already_associated_html: Please choose a certificate from a different PIV/CAC
+          or contact your administrator to ensure your PIV/CAC is up to date.
+      piv_cac_intro_html: We'll ask you to present your PIV/CAC card <strong>each
+        time you sign in</strong> as part of two-factor authentication.<br><br>After
+        clicking "Add PIV/CAC" your browser will prompt you for your PIV/CAC PIN and
+        have you select a certificate.
+      submit: Add PIV/CAC card
+      token:
+        bad_html: Please choose a different certificate from your PIV/CAC.
+        invalid_html: Please choose a different certificate from your PIV/CAC.
+        missing_html: Please choose a different method as your second factor.
+    registration:
+      labels:
+        email: Email address
+    select: "- Select -"
+    totp_setup:
+      totp_intro_html: When you sign in, you can get your security code from an authentication
+        app. %{link}
+      totp_step_1: Open your authentication app
+      totp_step_2: Enter this key in the app
+      totp_step_3: Enter the code from the app
+    two_factor:
+      backup_code: Security code
+      code: One-time security code
+      personal_key: Personal key
+      success: Next, you'll set up another method.
+      try_again: Use another phone number
+    two_factor_choice:
+      legend: Select an option to secure your account
+    two_factor_recovery_choice:
+      legend: Select an additional method to secure your account
+    verify_profile:
+      instructions: Enter the ten-character code in the letter we sent you.
+      name: Confirmation code
+      submit: Confirm account
+      title: Confirm your account
+    webauthn_delete:
+      caution: If you remove your security key you won't be able to use it to access
+        your login.gov account.
+      confirm: Are you sure you want to remove your security key?
+    webauthn_setup:
+      continue: Continue
+      instructions_text: Press the button on your security key to register it with
+        login.gov
+      instructions_title: Connect your security key
+      intro_html: Add a security key as an authentication method to your account.  Your
+        security key must support the FIDO standard.  You can add as many security
+        keys as you want, and we recommend at least two for easier account recovery.
+      login_text: Press the button on your security key to sign in with login.gov
+      nickname: Security key nickname
+      success_title: You have added a security key as your authentication method

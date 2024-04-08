@@ -1,0 +1,102 @@
+version: "2" # required to adjust maintainability checks
+checks:
+  argument-count:
+    config:
+      threshold: 4
+  complex-logic:
+    config:
+      threshold: 4
+  file-lines:
+    enabled: false
+  method-complexity:
+    config:
+      threshold: 15
+  method-count:
+    enabled: false
+  method-lines:
+    enabled: false
+  nested-control-flow:
+    config:
+      threshold: 4
+  return-statements:
+    config:
+      threshold: 4
+  similar-code:
+    enabled: false
+    config:
+      threshold: # language-specific defaults. an override will affect all languages.
+  identical-code:
+    enabled: false
+    config:
+      threshold: # language-specific defaults. an override will affect all languages.
+
+plugins:
+  brakeman:
+    enabled: true
+    exclude_patterns:
+    # Excluding User Flows tools since these are not loaded
+    # except when explicitly called from the User Flow rake tasks
+    - 'lib/user_flow_exporter.rb'
+    - 'lib/rspec/formatters/user_flow_formatter.rb'
+  bundler-audit:
+    enabled: true
+  coffeelint:
+    enabled: true
+  csslint:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+        ruby:
+        javascript:
+          mass_threshold: 50
+    exclude_patterns:
+    - 'spec/**/*'
+    - 'node_modules/**/*'
+    - 'db/schema.rb'
+    - 'app/forms/password_form.rb'
+    - 'lib/user_flow_exporter.rb'
+    - 'lib/rspec/formatters/user_flow_formatter.rb'
+  eslint:
+    enabled: true
+  fixme:
+    enabled: true
+    exclude_patterns:
+    - 'public/build/bundle.js'
+    - '.codeclimate.yml'
+    config:
+      strings:
+      - TODO
+      - FIXME
+      - HACK
+      - BUG
+      - XXX
+  pep8:
+    enabled: true
+  reek:
+    enabled: true
+    exclude_patterns:
+    - 'spec/**/*'
+    - 'db/migrate/*'
+    - 'lib/user_flow_exporter.rb'
+    - 'lib/rspec/formatters/user_flow_formatter.rb'
+  rubocop:
+    enabled: true
+    channel: rubocop-0-72
+  scss-lint:
+    enabled: true
+    checks:
+      HexLength:
+        enabled: false
+
+exclude_patterns:
+  - 'db/schema.rb'
+  - 'node_modules/'
+  - 'lib/proofer_mocks/'
+  - 'lib/rspec/formatters/user_flow_formatter.rb'
+  - 'lib/tasks/create_test_accounts.rb'
+  - 'lib/user_flow_exporter.rb'
+  - 'scripts/load_testing/'
+  - 'tmp/'
+  - 'config/initializers/jwt.rb'

@@ -1,0 +1,196 @@
+---
+fr:
+  user_mailer:
+    account_does_not_exist:
+      intro: Cette adresse e-mail n'est pas encore associée à un compte %{app}. Si
+        vous souhaitez créer un compte login.gov avec cette adresse e-mail, veuillez
+        cliquer sur le lien ci-dessous ou faites un copier-coller de l'intégralité
+        du lien sur votre navigateur. Si vous n'avez pas sollicité une réinitialisation
+        de votre mot de passe, nous vous prions de bien vouloir ignorer ce message.
+      link_text: Créer votre compte
+      subject: Votre demande de réinitialisation de votre mot de passe login.gov
+    account_reset_cancel:
+      help: ''
+      intro: Cet e-mail confirme que vous avez annulé votre demande de suppression
+        de votre compte login.gov.
+      subject: Supprimer votre compte
+    account_reset_complete:
+      help: ''
+      intro: Cet e-mail confirme que vous avez supprimé votre compte login.gov.
+      subject: Compte supprimé
+    account_reset_granted:
+      button: Oui, continuez la suppression
+      cancel_link_text: veuillez annuler
+      help: Si vous ne souhaitez pas supprimer votre compte, %{cancel_account_reset}.
+      intro: Vous recevez cet e-mail parce que vous avez demandé à supprimer et à
+        réinitialiser votre compte login.gov. <br> <br> Supprimer votre compte devrait
+        être votre dernier recours si vous êtes exclu de votre compte. Vous ne serez
+        pas en mesure de récupérer toute information liée à votre compte. Une fois
+        votre compte supprimé, vous pouvez en créer un nouveau en utilisant la même
+        adresse email.<br><br>Es-tu sûr de toi voulez-vous supprimer votre compte?
+      subject: Supprimer votre compte
+    account_reset_request:
+      cancel: Si vous ne voulez pas pour supprimer votre compte, <u>%{cancel_account_reset}</u>.
+      header: Attendez 24 heures pour supprimer votre compte
+      help: ''
+      intro: Vous avez demandé à supprimer votre compte login.gov. Pour des raisons
+        de sécurité, vous devez attendre 24 heures.
+      more_info: "<strong>Dans les 24 heures, vous recevrez un email avec un lien
+        pour confirmer et compléter la suppression de votre compte.</strong>"
+      subject: Supprimer votre compte
+    add_email:
+      footer: Ce lien expirera dans %{confirmation_period}.
+      header: Merci d'avoir ajouté un email. S'il vous plaît cliquez sur le lien ci-dessous
+        ou copiez et collez le lien en entier dans votre navigateur.
+      subject: Confirmez votre email
+    add_email_associated_with_another_account:
+      help: Si vous n'avez pas demandé de nouvel email ou que vous suspectez une erreur,
+        veuillez visiter le %{app} %{help_link} ou %{contact_link}.
+      intro: Cette adresse électronique est déjà associée à un compte %{app}, nous
+        ne pouvons donc pas l’ajouter à un autre compte. Vous devez d'abord le supprimer
+        ou le supprimer du compte auquel il est associé. Pour ce faire, suivez le
+        lien ci-dessous et connectez-vous avec cette adresse e-mail. Si vous n'essayez
+        pas d'ajouter cette adresse électronique à un compte, vous pouvez ignorer
+        ce message.
+      link_text: Allez à %{app}
+      reset_password: Si vous ne vous souvenez plus de votre mot de passe, allez à
+        %{app} pour le réinitialiser.
+    contact_link_text: communiquez avec nous
+    doc_auth_link:
+      message: You've requested to verify your identity on a desktop computer.  Please
+        sign in to %{sp_link}
+      subject: Verify your identity on a desktop computer
+    email_added:
+      header: Une nouvelle adresse e-mail a été ajoutée à votre profil login.gov.
+      help: Si vous n'avez pas apporté cette modification, connectez-vous à votre
+        profil et gérez vos adresses e-mail. Nous vous recommandons de changer également
+        votre mot de passe.
+      subject: Nouvelle adresse email ajoutée
+    email_confirmation_instructions:
+      first_sentence:
+        confirmed: Vous tentez de changer votre adresse courriel?
+        forgot_password: Vous avez essayé de réinitialiser le mot de passe de votre
+          compte login.gov, mais nous ne possédons pas de compte associé à cette adresse
+          courriel. Si vous souhaitez créer un nouveau compte associé à cette adresse
+          courriel, confirmez votre adresse courriel ci-dessous.
+        unconfirmed: Merci d'avoir envoyé votre adresse email.
+      footer: Ce lien expirera dans %{confirmation_period}.
+      header: "%{intro} Veuillez cliquer sur le lien ci-dessous ou copier et coller
+        le lien complet dans votre navigateur."
+      link_text: Confirmez votre adresse email
+      subject: Confirmez votre adresse courriel
+    email_deleted:
+      header: Une adresse email a été supprimée de votre profil login.gov.
+      help_html: Si vous ne souhaitez pas supprimer cette adresse électronique veuillez
+        visiter le %{help_link} de %{app} ou %{contact_link}.
+      subject: Adresse email supprimée
+    help_link_text: Centre d'aide
+    letter_expired:
+      help: ''
+      info: La lettre que nous avons postée à votre adresse contient un code de confirmation
+        arrivé à expiration et ne peut plus être utilisée pour terminer le processus
+        de vérification. Pour vérifier votre adresse et terminer le processus de vérification
+        de votre identité, vous devez vous connecter à %{link} et demander une autre
+        lettre.
+      subject: Votre code de confirmation d'adresse a expiré
+    letter_reminder:
+      help: ''
+      info: La lettre que vous êtes sur le point de recevoir contiendra un code de
+        confirmation nous permettant de vérifier votre adresse. Vous pouvez terminer
+        le processus de vérification d'identité en vous connectant à %{link} et en
+        entrant le code de confirmation.
+      subject: Nous avons envoyé une lettre à l'adresse que vous avez en dossier
+    new_device_sign_in:
+      disavowal_link: ici
+      help: Si vous n'avez pas changé votre mot de passe, vous pouvez réinitialiser
+        votre mot de passe %{disavowal_link}. Pour plus d'aide, veuillez visiter le
+        %{help_link} de %{app} ou %{contact_link}.
+      info_html: "<p>Votre compte login.gov a été connecté sur un nouvel appareil.</p><br/><br/>
+        <p><strong>%{date}<br/>%{location}</strong></p>"
+      subject: Nouvelle connexion avec votre compte Login.gov
+    password_changed:
+      disavowal_link: ici
+      help: Si vous n'avez pas changé votre mot de passe, vous pouvez réinitialiser
+        votre mot de passe %{disavowal_link}. Pour plus d'aide, veuillez visiter le
+        %{help_link} de %{app} ou %{contact_link}.
+      intro: Le mot de passe de votre compte %{app} a été changé.
+    personal_key_regenerated:
+      help_html: <p>Votre compte login.gov vient de recevoir une nouvelle clé personnelle
+        de 16 caractères. Le but de cet e-mail est de s'assurer que c'est bien vous
+        qui en êtes à l'origine.</p><p> Si vous venez de vous connecter et de régénérer
+        votre clé personnelle, c'est parfait ! Vous n'avez rien à faire.</p><p> Si
+        vous ne venez pas de régénérer votre clé personnelle, ou en cas de doute,
+        effectuez immédiatement les actions suivantes pour sécuriser votre compte :<ol><li><strong><a
+        href="%{reset_password_url}"> Modifiez votre mot de passe</a>.</strong> Choisissez
+        un mot de passe que vous n'avez pas encore utilisé avec ce compte.</li><li><strong><a
+        href="%{account_url}"> Connectez-vous à votre compte login.gov</a></strong>
+        et vérifiez bien que toutes les informations sur la page de votre compte sont
+        correctes, y compris les méthodes que vous utilisez pour l’authentification
+        à deux facteurs, dont le numéro de téléphone, l’application d’authentification
+        ou la clé de sécurité.</li><li><strong>Sur votre <a href="%{account_url}">page
+        de compte login.gov</a>, demandez une nouvelle clé personnelle.</strong> N'oubliez
+        pas de ne jamais la partager, sauf si vous l'utilisez pour vous connecter
+        à un site de confiance qui utilise login.gov.</li></ol></p><br>Merci,<br>L'équipe
+        login.gov
+      intro: Nouvelle clé personnelle émise
+      subject: Alerte de sécurité du compte
+    personal_key_sign_in:
+      help_html: <p>Votre compte login.gov a été connecté à l'aide de votre clé personnelle.
+        Vous recevez cet email pour vous assurer que c'était bien vous.</p><p>Si vous
+        venez de vous connecter avec votre clé personnelle, c'est parfait! Vous ne
+        devez rien faire.</p><p>Si vous ne vous êtes pas connecté avec une clé personnelle
+        ou si vous n’êtes pas sûr, prenez immédiatement les mesures suivantes pour
+        sécuriser votre compte:<ol><li><strong><a href="%{reset_password_url}">Changez
+        votre mot de passe</a>.</strong> Choisissez un mot de passe que vous n'avez
+        pas encore utilisé avec ce compte.</li><li><strong><a href="%{account_url}">Connectez-vous
+        à votre compte login.gov</a></strong> et assurez-vous de reconnaître toutes
+        les informations de la page de votre compte, y compris les méthodes que vous
+        utilisez pour l'authentification à deux facteurs, telles que le numéro de
+        téléphone, l'application d'authentification ou la clé de sécurité.</li><li><strong>Sur
+        la page de votre compte login.gov, demandez une nouvelle clé personnelle.</strong>
+        N'oubliez pas de ne jamais le partager à moins que vous ne l'utilisiez pour
+        vous connecter à un site Web de confiance utilisant login.gov.</li></ol></p><br>Merci,<br>L'équipe
+        login.gov
+      intro: La clé personnelle utilisée pour vous connecter
+      subject: Alerte de sécurité du compte
+    phone_added:
+      disavowal_link: réinitialiser votre mot de passe
+      help: Si vous n'avez pas apporté cette modification, connectez-vous à votre
+        profil et gérez vos numéros de téléphone. Nous vous recommandons également
+        de %{disavowal_link}.
+      intro: Un nouveau numéro de téléphone a été ajouté à votre profil %{app}.
+      subject: Nouveau numéro de téléphone ajouté
+    please_reset_password:
+      additional_help_html: Si vous avez utilisé votre mot de passe login.gov sur
+        d'autres sites internet, nous vous encourageons à mettre ces mots de passe
+        à jour également. Si vous avez des questions, veuillez laisser un message
+        à notre équipe sur %{contact_url} — nous répondrons sous deux jours ouvrables.
+      call_to_action: Pour accéder de nouveau à votre compte login.gov, vous allez
+        devoir réinitialiser votre mot de passe en utilisant le lien ci-dessous.
+      intro: Nous avons récemment identifié un problème de sécurité concernant votre
+        mot de passe. Nous avons désactivé ce dernier pour sécuriser votre compte.
+        Cela n'a pas été causé par un problème de sécurité sur login.gov mais par
+        la corruption de votre mot de passe.
+      link_text: Réinitialisez votre mot de passe
+      subject: Veuillez réinitialiser votre mot de passe
+    reset_password_instructions:
+      footer: Ce lien expire dans %{expires} heures.
+      header: Pour terminer la réinitialisation de votre mot de passe, veuillez cliquer
+        sur le lien ci-dessous ou copier et coller le lien complet dans votre navigateur.
+      link_text: Réinitialisez votre mot de passe
+      subject: Réinitialisez votre mot de passe
+    signup_with_your_email:
+      help: Si vous n'avez pas demandé un nouveau compte ou que vous soupçonnez qu'une
+        erreur s'est produite, veuillez visiter le %{help_link} de %{app} ou %{contact_link}.
+      intro: Cette adresse courriel est déjà associée à un compte %{app}, nous ne
+        pouvons donc pas l'utiliser pour créer un nouveau compte. Pour vous connecter
+        à votre compte existant, suivez le lien ci-dessous. Si vous ne tentez pas
+        de vous connecter avec cette adresse courriel, vous pouvez ignorer ce message.
+      link_text: Allez à %{app}
+      reset_password: Si vous ne vous souvenez plus de votre mot de passe, allez à
+        %{app} pour le réinitialiser.
+    undeliverable_address:
+      call_to_action: Veuillez vous connecter à %{link} et suivre les instructions.
+      help: ''
+      intro: Nous n'avons pas pu envoyer votre lettre à l'adresse que vous avez indiquée.
+      subject: La lettre envoyée à votre adresse était non livrable

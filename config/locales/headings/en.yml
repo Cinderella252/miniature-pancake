@@ -1,0 +1,64 @@
+---
+en:
+  headings:
+    account:
+      account_history: Account history
+      account_management: Account Management
+      connected_apps: Applications
+      devices: Devices
+      events: Events
+      login_info: Your account
+      profile_info: Profile information
+      reactivate: Reactivate your account
+      two_factor: Two-factor authentication
+      unphishable: Unphishable
+      verified_account: Verified Account
+    add_email: Add a new email address
+    add_info:
+      phone: Add a phone number
+    cancellations:
+      confirmation: You have cancelled verifying your identity with login.gov
+      prompt: Are you sure you want to cancel?
+    confirmations:
+      new: Send another confirmation email
+    create_account_with_sp:
+      sp_text: is using login.gov to allow you to sign in to your account safely and
+        securely.
+    create_account_without_sp: Create a login.gov account
+    edit_info:
+      password: Change your password
+      phone: Manage your phone settings
+    lock_failure: Here's what you can do
+    mfa_success: You successfully set up %{method} as your first authentication method.
+    passwords:
+      change: Change your password
+      confirm: Confirm your current password to continue
+      forgot: Forgot your password?
+    personal_key: Always have access to your account with your personal key
+    piv_cac_login:
+      new: Use your PIV/CAC to sign in to your account
+    piv_cac_setup:
+      certificate:
+        bad: The certificate you selected is invalid.
+        expired: The certificate you selected has expired.
+        invalid: The certificate you selected is invalid.
+        none: We cannot detect a certificate on your PIV/CAC card.
+        revoked: The certificate you selected has been revoked from your card.
+        unverified: The certificate you selected is invalid.
+      new: Use your PIV/CAC card to secure your account
+      piv_cac:
+        already_associated: The PIV/CAC you presented is associated with another user.
+      token:
+        bad: Internal error.
+        invalid: The certificate you selected is invalid.
+        missing: Internal error.
+    registrations:
+      enter_email: Enter your email address
+    session_timeout_warning: Need more time?
+    sign_in_with_sp: Sign in to continue to %{sp}
+    sign_in_without_sp: Sign in
+    totp_setup:
+      new: Enable an authentication app
+    verify_email: Check your email
+    webauthn_setup:
+      new: Add your security key

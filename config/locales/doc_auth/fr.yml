@@ -1,0 +1,109 @@
+---
+fr:
+  doc_auth:
+    buttons:
+      change_address: changement
+      change_ssn: changement
+      continue: Continuer
+      start_over: Recommencer
+      take_picture: Prendre une photo
+      use_computer: Utilisez votre ordinateur
+      use_phone: Utilisez votre téléphone
+    forms:
+      address1: Adresse
+      city: Ville
+      dob: Date de naissance
+      doc_success: Nous avons vérifié votre numéro de sécurité sociale et votre identifiant
+        délivré par l'État.
+      first_name: Prénom
+      last_name: Nom de famille
+      ssn: Numéro de sécurité sociale
+      state: Etat
+      zip_code: Code postal
+    headings:
+      address: Adresse mail
+      capture_complete: Nous avons vérifié votre ID émis par l'état
+      ssn: S'il vous plaît entrez votre numéro de sécurité sociale.
+      take_pic_back: Prenez une photo au verso de votre identifiant
+      take_pic_front: Prenez une photo du recto de votre identifiant
+      take_picture: Prendre une photo avec un téléphone
+      text_message: Nous avons envoyé un message à votre téléphone
+      upload: Comment voudriez-vous télécharger votre ID émis par l'état?
+      upload_back: S'il vous plaît télécharger une photo du dos de votre ID émis par
+        l'état.
+      upload_from_computer: Télécharger depuis votre ordinateur
+      upload_from_phone: Prenez une photo avec un téléphone pour télécharger votre
+        identifiant
+      upload_front: Veuillez télécharger une photo du recto de votre identifiant émis
+        par l'État.
+      verify: S'il vous plaît vérifier vos informations
+      welcome: Nous devons vérifier votre identité
+    info:
+      camera_required: Votre téléphone portable doit avoir une caméra et un navigateur
+        Web
+      link_sent: Veuillez vérifier votre téléphone et suivre les instructions pour
+        prendre une photo de votre identité émise par l'État. Lorsque vous avez terminé,
+        cliquez ici pour continuer à vérifier votre identité.
+      take_picture: Utilisez l'appareil photo sur votre téléphone portable et téléchargez
+        des images de votre identifiant. Nous utilisons uniquement les images pour
+        vérifier votre identité.
+      upload: Nous collecterons des informations à votre sujet en lisant votre identifiant
+        émis par l'État Nous ne stockons pas les images que vous téléchargez. Nous
+        vérifions uniquement votre identité.
+      upload_from_computer: Téléchargez des images de votre identifiant que vous avez
+        sur votre ordinateur ou utilisez un scanner pour capturer des images de votre
+        identifiant
+      upload_from_phone: Téléchargez des images directement depuis l'appareil photo
+        de votre téléphone
+      upload_image: Nous n'utilisons votre identifiant que pour vérifier votre identité,
+        et nous n'enregistrerons aucune image. Nous acceptons les formats BMP, PNG,
+        TIFF et JPG.
+      use_cac_html: "<strong>Êtes-vous DoD ou militaire?</strong> %{link}"
+      use_cac_link: Utilisez plutôt votre carte CAC
+      welcome: Nous vérifions votre identité pour nous assurer que vous êtes bien,
+        et non quelqu'un prétendant être vous. La vérification de votre identité vous
+        permet d'accéder à des services traitant des informations sensibles.
+    instructions:
+      bullet1: Téléchargez votre identifiant
+      bullet2: Confirmez votre adresse
+      bullet3: Sécurise ton compte
+      bullet4: Récupération du compte
+      consent: En cochant cette case, vous autorisez login.gov à demander, utiliser,
+        conserver et partager vos informations personnelles. Nous ne l'utiliserons
+        que pour vérifier votre identité.
+      email_sent: Lien envoyé à %{email}. Veuillez vérifier votre email de bureau
+        et suivez les instructions pour vérifier votre identité.
+      learn_more: Apprendre encore plus.
+      send_sms: Nous enverrons un message texte à votre appareil avec un lien. Suivez
+        ce lien vers votre navigateur pour prendre des photos du recto et du verso
+        de votre identifiant.
+      switch_back: Revenez sur votre ordinateur pour terminer la vérification de votre
+        identité
+      take_pic: 'Pour les meilleurs résultats:'
+      take_pic1: Utilisez un fond sombre
+      take_pic2: Prenez la photo sur une surface plane
+      take_pic3: Ne pas utiliser le flash sur votre appareil photo
+      take_pic4: Utilisez l'orientation paysage
+      text1: avec votre numéro de sécurité sociale
+      text2: en utilisant un numéro de téléphone ou une adresse postale
+      text3: en ressaisissant votre mot de passe login.gov
+      text4: assurez-vous d'avoir toujours accès
+      welcome: 'Ce que vous devez faire:'
+    tips:
+      header_text: Directives pour prendre une photo de votre identité
+      text1: Prenez-le dans une pièce très éclairée. La lumière solaire indirecte
+        est la meilleure.
+      text2: Assurez-vous que votre identité n’a pas de poussière ni de codes à barres
+        endommagés.
+      text3: Placez votre identifiant sur une surface sombre de couleur unie qui permet
+        de voir facilement tous ses bords.
+      text4: Assurez-vous qu'il n'y a pas d'éblouissement, d'ombres ou de reflets
+        sur votre identité.
+      text5: Votre identifiant doit couvrir 80% de la photo
+      text6: Assurez-vous que la photo est nette et nette. Il devrait être facile
+        de lire toutes les informations.
+      text7: Utilisez une caméra haute résolution. La caméra d'un bon téléphone mobile
+        ou d'une tablette fonctionnera.
+      title_html: "<b>Ne prenez pas la photo sur une surface blanche!</b> Voir plus..."
+    titles:
+      doc_auth: Authentification de document

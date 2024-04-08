@@ -1,0 +1,10 @@
+@media only print {
+  nav,
+  footer,
+  .btn,
+  .btn-border,
+  .ico,
+  .accordion {
+    display: none;
+  }
+}

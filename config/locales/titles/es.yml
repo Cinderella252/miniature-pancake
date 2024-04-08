@@ -1,0 +1,58 @@
+---
+es:
+  titles:
+    account: Cuenta
+    account_locked: Cuenta bloqueada temporalmente
+    add_info:
+      phone: Agregar un número de teléfono
+    confirmations:
+      delete: Por favor confirmar
+      new: Reenviar instrucciones de confirmación de su cuenta
+      show: Elija una contraseña
+    edit_info:
+      password: Edite su contraseña
+      phone: Edite su número de teléfono
+    enter_2fa_code: Ingese su código de seguridad de sólo un uso
+    passwords:
+      change: Cambie la contraseña de su cuenta
+      confirm: Confirme la contraseña de su cuenta
+      forgot: Restablezca la contraseña de su cuenta
+    personal_key: Por si acaso
+    phone_setup: Envíe su código de seguridad a través de un mensaje de texto o de
+      una llamada telefónica
+    piv_cac_login:
+      new: Use su PIV / CAC para iniciar sesión en su cuenta
+    piv_cac_setup:
+      certificate:
+        bad: Error de certificado PIV/CAC
+        expired: Error de certificado PIV/CAC
+        invalid: Error de certificado PIV/CAC
+        none: Error de certificado PIV/CAC
+        revoked: Error de certificado PIV/CAC
+        unverified: Error de certificado PIV/CAC
+      new: Use su tarjeta PIV/CAC para asegurar su cuenta
+      piv_cac:
+        already_associated: La PIV/CAC se está usando en otra cuenta
+      token:
+        bad: Error interno
+        invalid: Error en el certificado PIV/CAC
+        missing: Error interno
+    present_piv_cac: Presenta tu PIV/CAC
+    present_webauthn: Presente su clave de seguridad de hardware
+    reactivate_account: Reactive su cuenta
+    registrations:
+      new: Regístrese para una cuenta
+    sign_up:
+      completion_html: Tiene %{accent} con %{app}
+      loa1: creó su cuenta
+      new_sp: Acabas de iniciar sesión por primera vez
+      verified: Tiene verificó su identidad con %{app}
+    totp_setup:
+      new: Configure la autenticación de dos factores
+    two_factor_recovery_setup: Añadir un método de autenticación de copia de seguridad
+    two_factor_setup: Configuración de autenticación de dos factores
+    two_factor_setup_success: Configurar con éxito el primer método de autenticación
+    verify_email: Revise su email
+    verify_profile: Active su cuenta
+    visitors:
+      index: Bienvenido/a

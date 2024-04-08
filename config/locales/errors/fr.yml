@@ -1,0 +1,106 @@
+---
+fr:
+  errors:
+    account_reset:
+      cancel_token_invalid: le jeton d'annulation n'est pas valide
+      cancel_token_missing: le jeton d'annulation est manquant
+      granted_token_expired: Le lien pour supprimer votre compte login.gov a expiré.
+        Veuillez créer une autre demande pour supprimer votre compte.
+      granted_token_invalid: Le lien de suppression de votre compte login.gov n'est
+        pas valide. Veuillez réessayer en cliquant sur le lien dans votre e-mail.
+      granted_token_missing: Le lien de suppression de votre compte login.gov n'est
+        pas valide. Veuillez réessayer en cliquant sur le lien dans votre e-mail.
+    capture_doc:
+      invalid_link: Ce lien a expiré ou n'est pas valide. Veuillez demander un autre
+        lien pour vérifier votre identité sur un téléphone mobile.
+      token_expired: jeton expiré
+      token_invalid: jeton invalide
+      token_missing: jeton manquant
+    confirm_password_incorrect: Mot de passe incorrect.
+    doc_auth:
+      acuant_network_error: Désolé, nous rencontrons des difficultés techniques. Veuillez
+        réessayer plus tard.
+      acuant_throttle: Pour éviter les abus, nous limitons le nombre de fois où vous
+        pouvez essayer de valider un document. Veuillez réessayer plus tard.
+      consent_form: Avant de pouvoir continuer, vous devez nous donner la permission.
+        Veuillez cocher la case ci-dessous puis cliquez sur continuer.
+      general_error: Votre identité émise par l'état n'a pas pu être vérifiée. S'il
+        vous plaît essayez de télécharger des images différentes en commençant par
+        le devant de votre ID émis par l'État.
+      general_info: |-
+        <div class="bold">Si vous utilisez une caméra, veuillez vous assurer que</div>
+        <ul class="mxn2 mt1 pl3 mb1 lg-ml2">
+        <li class="mxn3">Vous êtes dans une zone bien éclairée</li>
+        <li class="mxn3">Votre identifiant n'a pas de code à barres endommagé</li>
+        <li class="mxn3">Les images sont claires (non floues) et nettes</li>
+        <li class="mxn3">Aucun éblouissement, ombre ou reflet n'est présent</li>
+        <li class="mxn3">L'identifiant se distingue de l'arrière-plan</li>
+        <li class="mxn3">Le fond derrière votre ID est une couleur unie</li>
+        <li class="mxn3">Le fond est visible derrière le document</li>
+        </ul>
+    invalid_authenticity_token: Oups, une erreur s'est produite. Veuillez essayer
+      de nouveau.
+    invalid_totp: Code non valide. Veuillez essayer de nouveau.
+    max_password_attempts_reached: Vous avez inscrit des mots de passe incorrects
+      un trop grand nombre de fois. Vous pouvez réinitialiser votre mot de passe en
+      utilisant le lien « Vous avez oublié votre mot de passe? ».
+    messages:
+      already_confirmed: a déjà été confirmé, veuillez essayer de vous connecter
+      blank: Veuillez remplir ce champ.
+      confirmation_code_incorrect: Code non valide. L'avez-vous inscrit correctement?
+      confirmation_invalid_token: Lien de confirmation non valide. Le lien est expiré
+        ou vous avez déjà confirmé votre compte.
+      confirmation_period_expired: Lien de confirmation expiré. Vous pouvez cliquer
+        sur « Envoyer les instructions de confirmation de nouveau » pour en obtenir
+        un autre.
+      expired: est expiré, veuillez en demander un nouveau
+      format_mismatch: Veuillez vous assurer de respecter le format requis.
+      improbable_phone: Numéro de téléphone non valide. Veillez à saisir un numéro
+        de téléphone valide.
+      invalid_calling_area: Les appels vers ce numéro de téléphone ne sont pas pris
+        en charge. Veuillez essayer par SMS si vous possédez un téléphone disposant
+        de cette fonction.
+      invalid_phone_number: Le numéro de téléphone saisi n'est pas valide.
+      invalid_sms_number: Le numéro de téléphone saisi ne prend pas en charge les
+        messages textuels. Veuillez essayer l'option d'appel téléphonique.
+      invalid_voice_number: Numéro de téléphone invalide. Vérifiez que vous avez entré
+        le bon indicatif international ou régional.
+      missing_field: Veuillez remplir ce champ.
+      must_have_us_country_code: Numéro de téléphone non valide. Veuillez vous assurer
+        de saisir un numéro de téléphone avec un code pays des États-Unis.
+      no_pending_profile: Aucun profil en attente de vérification
+      otp_failed: Échec de l'envoi de votre code de sécurité.
+      password_incorrect: Mot de passe incorrect
+      personal_key_incorrect: Clé personnelle incorrecte
+      phone_duplicate: Ce compte utilise déjà le numéro de téléphone que vous avez
+        entré en tant qu'authentificateur. Veuillez utiliser un numéro de téléphone
+        différent.
+      phone_unsupported: Désolé, nous ne sommes pas en mesure d'envoyer des SMS pour
+        le moment. S'il vous plaît essayez l'option d'appel téléphonique ci-dessous,
+        ou utilisez votre clé personnelle.
+      pwned_password: Le mot de passe que vous avez entré n'est pas sécurisé. C'est
+        dans une liste de mots de passe connus exposés dans les violations de données.
+      twilio_timeout: Le serveur a mis trop de temps à répondre. Veuillez réessayer.
+        Le service de messagerie texte peut avoir des problèmes. Vous pouvez vérifier
+        le statut avec <a href="https://status.twilio.com/" target='_blank'>notre
+        fournisseur de service de messages</a>.
+      unauthorized_authn_context: Contexte d'authentification non autorisé
+      unauthorized_nameid_format: Format non autorisé du nom d'identification
+      unauthorized_service_provider: Fournisseur de service non autorisé
+      usps_otp_expired: Votre code de confirmation a expiré. Veuillez solliciter une
+        autre lettre afin d'obtenir un nouveau code.
+      weak_password: Votre mot de passe n'est pas assez fort. %{feedback}
+    webauthn_setup:
+      already_registered: Clé de sécurité déjà enregistrée. Veuillez essayer une clé
+        de sécurité différente.
+      attestation_error: Désolé, votre clé de sécurité ne semble pas être une clé
+        de sécurité FIDO. Veuillez vous assurer que votre appareil est répertorié
+        sur https://fidoalliance.org/certification/fido-certified-products/ et si
+        vous pensez que l'erreur est la nôtre, veuillez nous contacter à l'adresse
+        hello@login.gov.
+      general_error: Une erreur s'est produite lors de l'ajout de votre clé de sécurité
+        physique. Veuillez réessayer.
+      not_supported: Désolé, votre navigateur ne supporte pas les clés de sécurité
+        FIDO. Les dernières versions de Chrome, Firefox, Edge et Safari prennent en
+        charge les clés de sécurité FIDO. Internet Explorer ne le fait pas.
+      unique_name: Ce nom est déjà pris. Veuillez choisir un autre nom.
